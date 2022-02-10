@@ -6,7 +6,7 @@ def is_anybody_inside(critical, tid):
     found = False
     i = 0
     while i<len(critical) and not found:
-        found = tid!=1 and critical[i]==1
+        found = tid!=i and critical[i]==1
         i += 1
     return found
 
